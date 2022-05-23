@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    padding: 30px 0;
+}
+li{
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid #E0E0E0;
+}
+body{
+    background-color:#fff;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+}
+h1{
+    font-size:40px;
+    color: #12A79D;
+    text-align:left;
+}
+.titulo-principal{
+    margin:100px 0;
+    display: block;
+}
+.btn{
+    color:#fff;
+    padding:20px 50px;
+    display:inline-block;
+    background:#12A79D;
+    border-radius: 2px;
+    margin:50px 0;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+}
+.btn:hover{
+    border:5px solid #ccc;
+}
+.cabecalho{
+    min-height: 90%;
+    background-color:#fff;
+}
+.foto-perfil{
+    width: 243px;
+    height: 243px;
+    background:url('img/perfil.jpeg'); 
+    background-size: 100%;
+    display: inline-block;
+    border-style: solid;
+    border-color: #B5E4E0;
+    border-width: 10px;
+    border-radius: 243px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    text-indent: -5000px;
+    background-position: 8px -8px;
+    margin: 0 50px;
+    
+}
+.wrapper{
+    width:1062px;
+    display: flex;
+    margin: 0 auto;
+
+    padding:10px 90px;
+}
+.info{
+    border-top: 1px solid #12A79D;
+    padding:30px 0;
+}
+.cabecalho .esquerda{
+    width: 65%;
+    display:inline-block;
+}
+.cabecalho .direita{
+    width:30%;
+    display:inline-block;
+    text-align: center;
+}
+.meio{
+    background-color:#fff;
+    padding:50px 0;
+}
+.meio .esquerda, .meio .direita{
+    padding: 0 30px;
+    width: 50%;
+}
+.meio .direita{
+    border-left:1px dashed #12A79D;
+}
+.esquerda li, .direita li{
+    display:block;
+    border-bottom:none;
+}
+.trabalhos{
+    color: #12A79D;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 10px 0;
+}
+h3{
+    margin:10px 0;
+}
+h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #12A79D;
+}
+h3 a{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #12A79D;
+} 
+.texto{
+    display:block;
+    margin: 0 auto;
+    padding:10px 90px;
+    width:800px;
+}
+.texto img{
+    max-width: 800px;
+}
+.texto p{
+    margin: 10px 0;
+}
+.center{
+    text-align: center;
+}
+.tag{
+    font-weight: 800;
+    font-size: 17px;
+    color:#fff; 
+    display:inline-block;
+    background:#12A79D;
+    border-radius: 16px;
+     
+}
+label{
+    font-weight: normal;
+    font-size: 20px;
+    color: #8695A4;
+    padding:5px 15px ;
+    margin:10px 0;   
+}
+.intro{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color:#000;
+    margin:10px 0;    
+}
+.seta{
+    margin: 0 auto;
+padding:10px 90px;
+width:1062px;
+}
+.miniatura{
+    width:200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    flex: none;
+}
+.miniatura img{
+    max-width: 200px;
+    max-height: 200px;
+   
+
+}
+.descricao{
+    margin: 25px 20px;
+}
+
+.mobile{
+    display:none;
+}
+.desktop{
+    display:block;
+}
+nav{
+    background-color:#fff;
+    height:100px;
+}
+nav .wrapper{
+    justify-content: flex-end;
+}
+nav a{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+    color:#12A79D;
+    margin: 40px 20px;
+    display:inline-block;
+}
+.selected{
+    color: #BDBDBD;
+}
+.fixed{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#eee;
+    z-index:1000;
+}
+footer{
+    background-color:#fff;
+    height:150px;
+    text-align:center;
+}
+footer p{
+    margin:20px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper{
+        display:block;
+        max-width: 800px;
+        width:auto;
+
+    }
+    .direita{
+        display:block;
+    }
+    .mobile{
+        display: block;
+        margin: 50px 0;
+    }
+    .desktop{
+        display:none;
+    }
+    .texto{
+        max-width:500px;
+    }
+    .texto img{
+        max-width: 500px;
+    }
+}
